@@ -104,7 +104,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      api_key: "2f7dd1fdb078b57d20fc2d6f4b721878",
+      api_key: "35fc126ea77bbd8add18e480e1e0dd83",
       url_base: "http://api.weatherstack.com/current?access_key=",
       query: "Seoul",
       searchCity: "",
@@ -155,7 +155,7 @@ export default {
     },
 
     setWeather: function (data) {
-      console.log(data);
+      // console.log(data);
       this.weather.cityName = data.location.name;
       this.weather.country = data.location.country;
       this.weather.weatherTemp = data.current.temperature;
@@ -250,7 +250,7 @@ export default {
         this.clouds = true;
       }
 
-      console.log(weatherCode);
+      // console.log(weatherCode);
     },
   },
 };
@@ -318,7 +318,7 @@ export default {
       }
 
       p {
-        margin: 1rem 0;
+        margin: 1rem 0 0.5rem 0;
         font-size: 0.8rem;
       }
     }
